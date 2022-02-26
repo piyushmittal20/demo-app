@@ -7,8 +7,4 @@ services:
     ports:
       - 8080:8080
     healthcheck:
-      test: ["exit", "0"]
-      interval: 1m30s
-      timeout: 30s
-      retries: 5
-      start_period: 30s
+      test: "exit 0"
